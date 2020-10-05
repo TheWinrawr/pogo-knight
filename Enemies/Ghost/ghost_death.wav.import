@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ghost_death.wav-312b92f7f62dd5cb9319e7f7d32df0b8.sample"
+
+[deps]
+
+source_file="res://Enemies/Ghost/ghost_death.wav"
+dest_files=[ "res://.import/ghost_death.wav-312b92f7f62dd5cb9319e7f7d32df0b8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

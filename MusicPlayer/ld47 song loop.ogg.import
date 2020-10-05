@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ld47 song loop.ogg-770bdd4609da9c6da5e304ceb009989d.oggstr"
+
+[deps]
+
+source_file="res://MusicPlayer/ld47 song loop.ogg"
+dest_files=[ "res://.import/ld47 song loop.ogg-770bdd4609da9c6da5e304ceb009989d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

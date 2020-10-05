@@ -1,0 +1,235 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Player/slash.wav" type="AudioStream" id=1]
+[ext_resource path="res://Player/Player.gd" type="Script" id=2]
+[ext_resource path="res://Player/player-Sheet.png" type="Texture" id=3]
+[ext_resource path="res://Player/player_damaged.wav" type="AudioStream" id=4]
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 3 )
+region = Rect2( 148, 0, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 154, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 3 )
+region = Rect2( 148, 154, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 3 )
+region = Rect2( 296, 154, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 3 )
+region = Rect2( 444, 154, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 3 )
+region = Rect2( 592, 154, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 308, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 3 )
+region = Rect2( 148, 308, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 3 )
+region = Rect2( 296, 308, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 3 )
+region = Rect2( 444, 308, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 3 )
+region = Rect2( 592, 308, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 462, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 3 )
+region = Rect2( 148, 462, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 3 )
+region = Rect2( 296, 462, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 3 )
+region = Rect2( 444, 462, 148, 154 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 3 )
+region = Rect2( 592, 462, 148, 154 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 16 ), SubResource( 17 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+}, {
+"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 22 ), SubResource( 22 ), SubResource( 22 ) ],
+"loop": true,
+"name": "downslash",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 27 ), SubResource( 27 ), SubResource( 27 ) ],
+"loop": true,
+"name": "sideslash",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 32 ), SubResource( 32 ), SubResource( 32 ) ],
+"loop": true,
+"name": "upslash",
+"speed": 20.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=14]
+radius = 7.65517
+height = 16.2806
+
+[sub_resource type="CapsuleShape2D" id=15]
+radius = 25.7801
+height = 43.2355
+
+[sub_resource type="CapsuleShape2D" id=33]
+radius = 25.0347
+height = 36.6354
+
+[sub_resource type="CapsuleShape2D" id=34]
+radius = 44.3274
+height = 20.6273
+
+[sub_resource type="Animation" id=5]
+resource_name = "damaged"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ 0.0, -240.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 3, 3 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "invincible"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8, 1.2, 1.6, 2, 2.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false, true, false, true ]
+}
+
+[node name="Player" type="KinematicBody2D"]
+z_index = 50
+collision_mask = 2
+script = ExtResource( 2 )
+
+[node name="PlayerAnimation" type="AnimatedSprite" parent="."]
+position = Vector2( 15.8112, -20.8181 )
+frames = SubResource( 4 )
+offset = Vector2( 8, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 13.3979, -21.79 )
+shape = SubResource( 14 )
+
+[node name="SlashHitboxes" type="Node2D" parent="."]
+
+[node name="DownSlash" type="Area2D" parent="SlashHitboxes"]
+visible = false
+position = Vector2( 0, 40 )
+collision_layer = 0
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SlashHitboxes/DownSlash"]
+position = Vector2( 0.922089, -20.8243 )
+rotation = 1.5708
+shape = SubResource( 15 )
+
+[node name="SideSlash" type="Area2D" parent="SlashHitboxes"]
+visible = false
+position = Vector2( 40, 0 )
+collision_layer = 0
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SlashHitboxes/SideSlash"]
+position = Vector2( 14.3231, -17.7888 )
+rotation = 1.5708
+shape = SubResource( 33 )
+
+[node name="UpSlash" type="Area2D" parent="SlashHitboxes"]
+visible = false
+position = Vector2( 0, -40 )
+collision_layer = 0
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SlashHitboxes/UpSlash"]
+position = Vector2( 0.527039, -26.7847 )
+rotation = 1.5708
+shape = SubResource( 34 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/damaged = SubResource( 5 )
+anims/invincible = SubResource( 6 )
+
+[node name="SlashSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+
+[node name="DamageSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="FloorCheck" type="RayCast2D" parent="."]
+position = Vector2( 13.1004, -7.83177 )
+enabled = true
+cast_to = Vector2( 0, 2 )
+collision_mask = 2
+[connection signal="animation_finished" from="PlayerAnimation" to="." method="_on_PlayerAnimation_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

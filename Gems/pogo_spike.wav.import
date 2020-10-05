@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pogo_spike.wav-665f7af7e97c3919ce3d40ee8f3879ee.sample"
+
+[deps]
+
+source_file="res://Gems/pogo_spike.wav"
+dest_files=[ "res://.import/pogo_spike.wav-665f7af7e97c3919ce3d40ee8f3879ee.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

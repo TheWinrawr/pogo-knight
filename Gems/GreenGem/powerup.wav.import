@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/powerup.wav-206b74c0e2b5f25d1950f299308780f3.sample"
+
+[deps]
+
+source_file="res://Gems/GreenGem/powerup.wav"
+dest_files=[ "res://.import/powerup.wav-206b74c0e2b5f25d1950f299308780f3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

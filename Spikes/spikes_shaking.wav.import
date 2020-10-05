@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/spikes_shaking.wav-cd945a2cb02c7874e30a2ef872d48d0e.sample"
+
+[deps]
+
+source_file="res://Spikes/spikes_shaking.wav"
+dest_files=[ "res://.import/spikes_shaking.wav-cd945a2cb02c7874e30a2ef872d48d0e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
